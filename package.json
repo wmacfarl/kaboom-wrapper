@@ -1,0 +1,27 @@
+{
+  "name": "kaboom-choo",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "bankai build src/index.js",
+    "create": "choo-scaffold",
+    "inspect": "bankai inspect src/index.js",
+    "start": "bankai start src/index.js",
+    "test": "standard && npm run test-deps",
+    "test-deps": "dependency-check . && dependency-check . --extra --no-dev -i tachyons"
+  },
+  "dependencies": {
+    "choo": "^7.1.0",
+    "choo-service-worker": "^3.0.0",
+    "kaboom": "^3000.0.0-beta.3",
+    "sheetify": "^2.0.3",
+    "tachyons": "^4.12.0"
+  },
+  "devDependencies": {
+    "bankai": "^8.1.1",
+    "choo-devtools": "^3.0.4",
+    "choo-scaffold": "^1.2.0",
+    "dependency-check": "^4.1.0",
+    "standard": "^17.0.0"
+  }
+}
